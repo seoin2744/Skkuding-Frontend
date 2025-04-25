@@ -43,7 +43,7 @@ pokemons.map( (pokemon,index) => {
 
     card.addEventListener("click", () => {
         window.localStorage.setItem('pokemon',JSON.stringify(pokemonInfo));
-        window.location.href = '../detail.html';
+        window.location.href = 'detail.html';
     });
 
     cardList.appendChild(card);
