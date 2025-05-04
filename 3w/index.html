@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reset.css">
     <title>Pokemon List</title>
 </head>
 <body>
@@ -16,100 +16,8 @@
         </h1>
     </nav>
     <main>
-        <div id="card-wrapper">
-            <a href="./pokemon/1.html" class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" 
-                alt="bulbasaur">
-                <div class="info-wrapper">
-                    <h2>bulbasaur</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/2.html"  class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" alt="ivysaur">
-                <div class="info-wrapper">
-                    <h2>ivysaur</h2>
-                    <p>height: 10 dm</p>
-                    <p>weight: 130 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/3.html"  class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" alt="venusaur">
-                <div class="info-wrapper">
-                    <h2>venusaur</h2>
-                    <p>height: 10 dm</p>
-                    <p>weight: 130 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/4.html"  class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="charmander">
-                <div class="info-wrapper">
-                    <h2>charmander</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/5.html"  class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png" alt="charmeleon">
-                <div class="info-wrapper">
-                    <h2>charmeleon</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/6.html"  class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="charizard">
-                <div class="info-wrapper">
-                    <h2>charizard</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/7.html"  class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="squirtle">
-                <div class="info-wrapper">
-                    <h2>squirtle</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/8.html" class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png" alt="wartortle">
-                <div class="info-wrapper">
-                    <h2>wartortle</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/9.html" class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png" alt="blastoise">
-                <div class="info-wrapper">
-                    <h2>blastoise</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-            <a href="./pokemon/10.html" class="card">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png" alt="caterpie">
-                <div class="info-wrapper">
-                    <h2>caterpie</h2>
-                    <p>height: 7 dm</p>
-                    <p>weight: 69 hg</p>
-                    <p>types: grass, poison</p>
-                </div>
-            </a>
-
-        </div>
+        <div id="card-list"></div>
+        <script type="module" src="./dist/js/main.js"></script>
     </main>
 </body>
 </html>

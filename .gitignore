@@ -4,4 +4,6 @@
 
 dist/
 
+voca/
+
 tsconfig.tsbuildinfo
