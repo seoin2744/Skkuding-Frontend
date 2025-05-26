@@ -1,0 +1,45 @@
+.imgWrapper {
+  border-radius: 100%;
+  overflow: hidden;
+  border: var(--border-dark);
+  aspect-ratio: 1 / 1;
+}
+
+.imgWrapper img {
+  object-fit: contain;
+}
+
+.heading {
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  text-transform: capitalize;
+}
+
+.table {
+  padding: 1rem;
+  border-collapse: separate;
+  border: var(--border-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: var(--font-sm);
+  display: table;
+}
+
+.cell {
+  padding: 0.75rem 1rem;
+  border-bottom: var(--border-light);
+}
+
+.row:last-child .cell {
+  border-bottom: none;
+}
+
+.cell:first-child {
+  font-weight: var(--font-bold);
+  text-transform: capitalize;
+}
+
+.cell:last-child {
+  text-align: right;
+  color: var(--text-color-light);
+}

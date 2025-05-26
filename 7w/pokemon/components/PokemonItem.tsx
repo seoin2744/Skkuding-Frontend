@@ -1,9 +1,9 @@
-import React from "react";
-import { Pokemon } from "../types";
+import Image from "next/image";
 import styles from "../styles/PokemonList.module.css";
+import { RestPokemon } from "./types";
 
 interface PokemonItemProps {
-  pokemon: Pokemon;
+  pokemon: RestPokemon;
   index: number;
   onSelect: (index: number) => void;
 }
@@ -11,13 +11,16 @@ interface PokemonItemProps {
 export function PokemonItem({ pokemon, index, onSelect }: PokemonItemProps) {
   return (
     <div className={styles.card} onClick={() => onSelect(index)}>
-      <img
+      <Image
         className={styles.cardImage}
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
           index + 1
         }.png`}
         alt={pokemon.name}
+        width={200}
+        height={200}
       />
+
       <div className={styles.infoWrapper}>
         <h2 className={styles.infoName}>{pokemon.name}</h2>
         <p>height: {pokemon.height} dm</p>

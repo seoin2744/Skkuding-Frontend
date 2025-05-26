@@ -1,0 +1,41 @@
+.cardList {
+    display: grid;
+    max-width: var(--max-width);
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: var(--border-light);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.cardImage {
+    width: 4rem;
+    height: 4rem;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.infoName {
+    font-size: var(--font-md);
+    margin-bottom: 0.2rem;
+    text-transform: capitalize;
+}
+
+.card p {
+    font-size: var(--font-sm);
+    font-weight: var(--font-thin);
+    color: var(--text-color-light);
+}

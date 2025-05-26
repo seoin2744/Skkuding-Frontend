@@ -1,9 +1,8 @@
-import React from "react";
-import { Pokemon } from "../types";
+import { RestPokemon } from "../types";
 import styles from "../styles/PokemonList.module.css";
 
 interface PokemonItemProps {
-  pokemon: Pokemon;
+  pokemon: RestPokemon;
   index: number;
   onSelect: (index: number) => void;
 }
